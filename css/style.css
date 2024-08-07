@@ -1,0 +1,261 @@
+body {
+    font-family: "Roboto", "Noto Sans TC", serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    /* For父容器的大小 */
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    /* outline: 1px solid #fff; */
+}
+
+/* ======== container ======== */
+.container {
+    max-width: 1320px;
+    /* 改成max-width才有rwd效果 */
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* ======== header ======== */
+
+.header {
+    display: flex;
+    padding: 12px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.menu {
+    font-size: 20px;
+    display: flex;
+    margin-left: auto;
+}
+
+.menu li {
+    padding-left: 64px;
+}
+
+.menu li a {
+    display: block;
+    color: #fff;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+
+    /* 平板尺寸，但是目前還不知道怎麼照設計稿做 */
+    .menu li {
+        padding-left: 32px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .logo {
+        margin: 12px;
+    }
+
+    .menu {
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        font-size: 16px;
+        flex-wrap: wrap;
+    }
+
+    .menu li {
+        width: 50%;
+        border: 1px #fff solid;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .menu li a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+}
+
+/* ======== header ======== */
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+
+.footer {
+    padding-top: 48px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fmenu {
+    font-size: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.fmenu li {
+    height: 48px;
+    margin-right: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.fmenu li a:hover {
+    text-decoration: underline;
+}
+
+.contact {
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact li {
+    font-family: "Noto Sans TC", serif;
+    display: flex;
+    align-items: center;
+}
+
+.contact li a:hover {
+    color: #FBF2F2;
+}
+
+.icon36 {
+    font-size: 36px;
+    padding-right: 22px;
+}
+
+.icon40 {
+    font-size: 40px;
+    padding-right: 20px;
+}
+
+
+.soical {
+    display: flex;
+
+}
+
+.soical li {
+    width: 48px;
+    margin-left: 32px;
+}
+
+.soical li a img:hover {
+    box-shadow: 3px 3px 3px #FBF2F2;
+}
+
+.copyright {
+    border-top: 1px #fff solid;
+    font-size: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+}
+
+.privacy {
+    display: flex;
+    margin-left: auto;
+}
+
+.privacy li {
+    padding-left: 48px;
+}
+
+@media (max-width: 767px) {
+
+    /* 平板尺寸，但是目前還不知道怎麼照設計稿做 */
+
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .fmenu {
+        display: none;
+    }
+
+    .soical li {
+        width: 24px;
+        margin-left: 8px;
+
+    }
+
+    .contact {
+        font-size: 16px;
+    }
+
+    .contact li {
+        padding-bottom: 8px;
+    }
+
+    .icon36 {
+        font-size: 18px;
+        padding-right: 11px;
+    }
+
+    .icon40 {
+        font-size: 20px;
+        padding-right: 10px;
+    }
+
+    .copyright {
+        border-top: 1px #fff solid;
+        font-size: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .privacy {
+        display: flex;
+        flex-direction: column;
+        padding-top: 8px;
+        margin-left: unset;
+    }
+
+    .privacy li {
+        font-size: 16px;
+        padding-left: 0px;
+        padding-bottom: 8px;
+    }
+}

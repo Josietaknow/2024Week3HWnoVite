@@ -1,0 +1,64 @@
+/* 文字、顏色 */
+.bg-primary {
+    background-color: #AA0601;
+}
+
+.text-primary {
+    color: #AA0601;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-light {
+    color: #FBF2F2;
+}
+
+/* flex系列 */
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+/* padding, margin */
+
+.py-3 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
