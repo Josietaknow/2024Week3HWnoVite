@@ -1,0 +1,33 @@
+body {
+    font-family: "Roboto", "Noto Sans TC", serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    /* For父容器的大小 */
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    /* outline: 1px solid #fff; */
+}
+
+
+/* ======== container ======== */
+.container {
+    max-width: 1320px;
+    /* 改成max-width才有rwd效果 */
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
